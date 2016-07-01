@@ -12,7 +12,7 @@
                 - {ParameterKey: VpcId, ParameterValue: vpc-7ddddd, UsePreviousValue: false}
                 - {ParameterKey: OpenCidrIp1, ParameterValue: dddd/32, UsePreviousValue: false}
                 - {ParameterKey: OpenCidrIp2, ParameterValue: sddddd/32, UsePreviousValue: false}
-                - {ParameterKey: FlaskWorkerDockerImage, ParameterValue: 'www-1.amazonaws.com/dwh/dart-flask:6.3.4', UsePreviousValue: false}
+                - {ParameterKey: FlaskWorkerDockerImage, ParameterValue: 'www-1.amazonaws.com/dwh/dart-flask:', UsePreviousValue: false}
                 - {ParameterKey: NginxWorkerDockerImage, ParameterValue: 'wwwt-1.amazonaws.com/dwh/dart-nginx:2.0.0', UsePreviousValue: false}
                 - {ParameterKey: CloudWatchLogsDockerImage, ParameterValue: 'www-1.amazonaws.com/dwh/dart-cloudwatchlogs:1.0.0', UsePreviousValue: false}
                 - {ParameterKey: DartConfig, ParameterValue: !env 's3://wwww${DART_ENV}.yaml', UsePreviousValue: false}
@@ -40,7 +40,7 @@
                 - {ParameterKey: VpcId, ParameterValue: aaaaa, UsePreviousValue: false}
                 - {ParameterKey: OpenCidrIp1, ParameterValue: aaaaa/32, UsePreviousValue: false}
                 - {ParameterKey: OpenCidrIp2, ParameterValue: aaa/32, UsePreviousValue: false}
-                - {ParameterKey: FlaskWorkerDockerImage, ParameterValue: 'aaa.amazonaws.com/dwh/dart-flask:6.3.4', UsePreviousValue: false}
+                - {ParameterKey: FlaskWorkerDockerImage, ParameterValue: 'aaa.amazonaws.com/dwh/dart-flask:', UsePreviousValue: false}
                 - {ParameterKey: NginxWorkerDockerImage, ParameterValue: 'aaa.amazonaws.com/dwh/dart-nginx:2.0.0', UsePreviousValue: false}
                 - {ParameterKey: CloudWatchLogsDockerImage, ParameterValue: 'www.amazonaws.com/dwh/dart-cloudwatchlogs:1.0.0', UsePreviousValue: false}
                 - {ParameterKey: DartConfig, ParameterValue: !env 's3://wwww-${DART_ENV}.yaml', UsePreviousValue: false}
