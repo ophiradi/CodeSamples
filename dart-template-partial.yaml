@@ -15,7 +15,7 @@
                 - {ParameterKey: FlaskWorkerDockerImage, ParameterValue: 'www-1.amazonaws.com/dwh/dart-flask:', UsePreviousValue: false}
                 - {ParameterKey: NginxWorkerDockerImage, ParameterValue: 'wwwt-1.amazonaws.com/dwh/dart-nginx:2.0.0', UsePreviousValue: false}
                 - {ParameterKey: CloudWatchLogsDockerImage, ParameterValue: 'www-1.amazonaws.com/dwh/dart-cloudwatchlogs:1.0.0', UsePreviousValue: false}
-                - {ParameterKey: DartConfig, ParameterValue: !env 's3://wwww${DART_ENV}.yaml', UsePreviousValue: false}
+                - {ParameterKey: DartConfig, ParameterValue:  's3://wwww${DART_ENV}.yaml', UsePreviousValue: false}
                 - {ParameterKey: AwsDefaultRegion, ParameterValue: us-east-1, UsePreviousValue: false}
                 - {ParameterKey: DartWebVersion, ParameterValue: 6.1.0, UsePreviousValue: false}
                 - {ParameterKey: WebEcsServiceLoadBalancerName, ParameterValue: ...TBD..., UsePreviousValue: false}
@@ -43,7 +43,7 @@
                 - {ParameterKey: FlaskWorkerDockerImage, ParameterValue: 'aaa.amazonaws.com/dwh/dart-flask:', UsePreviousValue: false}
                 - {ParameterKey: NginxWorkerDockerImage, ParameterValue: 'aaa.amazonaws.com/dwh/dart-nginx:2.0.0', UsePreviousValue: false}
                 - {ParameterKey: CloudWatchLogsDockerImage, ParameterValue: 'www.amazonaws.com/dwh/dart-cloudwatchlogs:1.0.0', UsePreviousValue: false}
-                - {ParameterKey: DartConfig, ParameterValue: !env 's3://wwww-${DART_ENV}.yaml', UsePreviousValue: false}
+                - {ParameterKey: DartConfig, ParameterValue:  's3://wwww-${DART_ENV}.yaml', UsePreviousValue: false}
                 - {ParameterKey: AwsDefaultRegion, ParameterValue: us-east-1, UsePreviousValue: false}
                 - {ParameterKey: DartWebVersion, ParameterValue: 6.1.0, UsePreviousValue: false}
                 - {ParameterKey: WebEcsServiceLoadBalancerName, ParameterValue: ...TBD..., UsePreviousValue: false}
