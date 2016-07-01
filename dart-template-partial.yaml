@@ -1,0 +1,55 @@
+    web-internal:
+        template_body_path: aws/cloudformation/web.json
+        user_data_script: aws/userdata/userdata.sh
+        boto_args:
+            Parameters:
+                - {ParameterKey: VpcZoneIdentifier, ParameterValue: 'subnet-rrrr,subnet-1wwwww', UsePreviousValue: false}
+                - {ParameterKey: AvailabilityZones, ParameterValue: 'us-east-1b,us-east-1c', UsePreviousValue: false}
+                - {ParameterKey: IamInstanceProfile, ParameterValue: dwh-ffffffG1, UsePreviousValue: false}
+                - {ParameterKey: KeyName, ParameterValue: ,aaa UsePreviousValue: false}
+                - {ParameterKey: EcsAmiId, ParameterValue: ami-ffffff, UsePreviousValue: false}
+                - {ParameterKey: InstanceType, ParameterValue: m3.medium, UsePreviousValue: false}
+                - {ParameterKey: VpcId, ParameterValue: vpc-7ddddd, UsePreviousValue: false}
+                - {ParameterKey: OpenCidrIp1, ParameterValue: dddd/32, UsePreviousValue: false}
+                - {ParameterKey: OpenCidrIp2, ParameterValue: sddddd/32, UsePreviousValue: false}
+                - {ParameterKey: FlaskWorkerDockerImage, ParameterValue: 'www-1.amazonaws.com/dwh/dart-flask:6.3.4', UsePreviousValue: false}
+                - {ParameterKey: NginxWorkerDockerImage, ParameterValue: 'wwwt-1.amazonaws.com/dwh/dart-nginx:2.0.0', UsePreviousValue: false}
+                - {ParameterKey: CloudWatchLogsDockerImage, ParameterValue: 'www-1.amazonaws.com/dwh/dart-cloudwatchlogs:1.0.0', UsePreviousValue: false}
+                - {ParameterKey: DartConfig, ParameterValue: !env 's3://wwww${DART_ENV}.yaml', UsePreviousValue: false}
+                - {ParameterKey: AwsDefaultRegion, ParameterValue: us-east-1, UsePreviousValue: false}
+                - {ParameterKey: DartWebVersion, ParameterValue: 6.1.0, UsePreviousValue: false}
+                - {ParameterKey: WebEcsServiceLoadBalancerName, ParameterValue: ...TBD..., UsePreviousValue: false}
+                - {ParameterKey: WebEcsServiceRoleName, ParameterValue: dwwww, UsePreviousValue: false}
+            Tags:
+                - {Key: Name, Value: dwh-dar-web}
+                - {Key: Product, Value: dwh}
+                - {Key: Function, Value: dar-web}
+                - {Key: Accounting, Value: 230-620600}
+
+    web:
+        template_body_path: aws/cloudformation/web.json
+        user_data_script: aws/userdata/userdata.sh
+        boto_args:
+            Parameters:
+                - {ParameterKey: VpcZoneIdentifier, ParameterValue: 'subnet-wwww1', UsePreviousValue: false}
+                - {ParameterKey: AvailabilityZones, ParameterValue: 'uwwweast-1c', UsePreviousValue: false}
+                - {ParameterKey: IamInstanceProfile, ParameterValue: wwwwe-1VJ4S5CREFWG1, UsePreviousValue: false}
+                - {ParameterKey: KeyName, ParameterValue: aaaa, UsePreviousValue: false}
+                - {ParameterKey: EcsAmiId, ParameterValue: aaaaa, UsePreviousValue: false}
+                - {ParameterKey: InstanceType, ParameterValue: m3.medium, UsePreviousValue: false}
+                - {ParameterKey: VpcId, ParameterValue: aaaaa, UsePreviousValue: false}
+                - {ParameterKey: OpenCidrIp1, ParameterValue: aaaaa/32, UsePreviousValue: false}
+                - {ParameterKey: OpenCidrIp2, ParameterValue: aaa/32, UsePreviousValue: false}
+                - {ParameterKey: FlaskWorkerDockerImage, ParameterValue: 'aaa.amazonaws.com/dwh/dart-flask:6.3.4', UsePreviousValue: false}
+                - {ParameterKey: NginxWorkerDockerImage, ParameterValue: 'aaa.amazonaws.com/dwh/dart-nginx:2.0.0', UsePreviousValue: false}
+                - {ParameterKey: CloudWatchLogsDockerImage, ParameterValue: 'www.amazonaws.com/dwh/dart-cloudwatchlogs:1.0.0', UsePreviousValue: false}
+                - {ParameterKey: DartConfig, ParameterValue: !env 's3://wwww-${DART_ENV}.yaml', UsePreviousValue: false}
+                - {ParameterKey: AwsDefaultRegion, ParameterValue: us-east-1, UsePreviousValue: false}
+                - {ParameterKey: DartWebVersion, ParameterValue: 6.1.0, UsePreviousValue: false}
+                - {ParameterKey: WebEcsServiceLoadBalancerName, ParameterValue: ...TBD..., UsePreviousValue: false}
+                - {ParameterKey: WebEcsServiceRoleName, ParameterValue: dwh-dar-iam-rpt-1-wwww-1Lwww, UsePreviousValue: false}
+            Tags:
+                - {Key: Name, Value: wwwww}
+                - {Key: Product, Value: www}
+                - {Key: Function, Value: dar-www}
+                - {Key: Accounting, Value: wwww0}
